@@ -33,12 +33,11 @@ export default function Hero() {
                 <h2 className="text-2xl md:text-3xl font-semibold text-gray-700">
                   Full Stack Developer & Mobile App Developer
                 </h2>
+                <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+                  Experienced software developer with 5+ years of expertise in PHP, Laravel, React.js, Next.js, Flutter, and mobile app development. 
+                  I create innovative web applications and mobile solutions that drive business growth.
+                </p>
               </div>
-              
-              <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-                Passionate developer with expertise in PHP, Laravel, React.js, Next.js, Flutter, and mobile app development. 
-                I create innovative web applications and mobile solutions that drive business growth.
-              </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
