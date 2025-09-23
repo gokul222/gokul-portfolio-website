@@ -4,30 +4,8 @@ import { useEffect, useState } from 'react'
 import { ExternalLink, Github, Smartphone, Globe, Server, Database } from 'lucide-react'
 
 export default function Projects() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
   const [activeFilter, setActiveFilter] = useState('all')
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 }
-    )
-
-    const element = document.getElementById('projects')
-    if (element) {
-      observer.observe(element)
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element)
-      }
-    }
-  }, [])
 
   const projects = [
     // Web Projects
@@ -319,7 +297,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-white scroll-mt-24 sm:scroll-mt-32">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
