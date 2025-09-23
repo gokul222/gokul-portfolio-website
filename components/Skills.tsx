@@ -3,29 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export default function Skills() {
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 }
-    )
-
-    const element = document.getElementById('skills')
-    if (element) {
-      observer.observe(element)
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element)
-      }
-    }
-  }, [])
+  const [isVisible, setIsVisible] = useState(true)
 
   const skillCategories = [
     {
@@ -148,7 +126,7 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-50 scroll-mt-24 sm:scroll-mt-32">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
