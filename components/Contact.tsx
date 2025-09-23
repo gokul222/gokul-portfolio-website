@@ -96,8 +96,8 @@ export default function Contact() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      details: '+91',
-      link: 'tel:+'
+      details: '+918870005705',
+      link: 'tel:+918870005705'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
